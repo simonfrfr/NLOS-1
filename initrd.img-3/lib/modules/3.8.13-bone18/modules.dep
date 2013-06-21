@@ -1,0 +1,37 @@
+kernel/fs/reiserfs/reiserfs.ko:
+kernel/fs/isofs/isofs.ko:
+kernel/fs/exportfs/exportfs.ko:
+kernel/fs/udf/udf.ko:
+kernel/fs/jfs/jfs.ko:
+kernel/fs/xfs/xfs.ko: kernel/fs/exportfs/exportfs.ko
+kernel/drivers/block/virtio_blk.ko: kernel/drivers/virtio/virtio_ring.ko kernel/drivers/virtio/virtio.ko
+kernel/drivers/scsi/virtio_scsi.ko: kernel/drivers/virtio/virtio_ring.ko kernel/drivers/virtio/virtio.ko
+kernel/drivers/net/phy/mdio-mux.ko:
+kernel/drivers/net/phy/mdio-mux-mmioreg.ko: kernel/drivers/net/phy/mdio-mux.ko
+kernel/drivers/net/ethernet/micrel/ks8842.ko:
+kernel/drivers/net/ethernet/micrel/ks8851.ko:
+kernel/drivers/net/ethernet/microchip/enc28j60.ko:
+kernel/drivers/net/ethernet/wiznet/w5100.ko:
+kernel/drivers/net/ethernet/wiznet/w5300.ko:
+kernel/drivers/net/ethernet/davicom/dm9000.ko:
+kernel/drivers/net/tun.ko:
+kernel/drivers/net/virtio_net.ko: kernel/drivers/virtio/virtio_ring.ko kernel/drivers/virtio/virtio.ko
+kernel/drivers/net/vxlan.ko:
+kernel/drivers/net/ppp/ppp_generic.ko: kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_async.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/bsd_comp.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_deflate.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_mppe.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_synctty.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/pppox.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/pppoe.ko: kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/slip/slip.ko: kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/slip/slhc.ko:
+kernel/drivers/net/ieee802154/fakehard.ko: kernel/net/ieee802154/ieee802154.ko
+kernel/drivers/net/ieee802154/fakelb.ko: kernel/net/mac802154/mac802154.ko kernel/net/ieee802154/ieee802154.ko
+kernel/drivers/net/ieee802154/at86rf230.ko: kernel/net/mac802154/mac802154.ko kernel/net/ieee802154/ieee802154.ko
+kernel/drivers/net/ieee802154/mrf24j40.ko: kernel/net/mac802154/mac802154.ko kernel/net/ieee802154/ieee802154.ko
+kernel/drivers/virtio/virtio.ko:
+kernel/drivers/virtio/virtio_ring.ko:
+kernel/net/ieee802154/ieee802154.ko:
+kernel/net/mac802154/mac802154.ko: kernel/net/ieee802154/ieee802154.ko

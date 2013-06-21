@@ -1,0 +1,27 @@
+# Aliases extracted from modules themselves.
+alias iso9660 isofs
+alias virtio:d00000002v* virtio_blk
+alias virtio:d00000008v* virtio_scsi
+alias of:N*T*Cmdio-mux-mmioreg* mdio_mux_mmioreg
+alias platform:ks8842 ks8842
+alias spi:ks8851 ks8851
+alias spi:enc28j60 enc28j60
+alias platform:w5100 w5100
+alias platform:w5300 w5300
+alias platform:dm9000 dm9000
+alias devname:net/tun tun
+alias char-major-10-200 tun
+alias virtio:d00000001v* virtio_net
+alias rtnl-link-vxlan vxlan
+alias devname:ppp ppp_generic
+alias char-major-108-0 ppp_generic
+alias tty-ldisc-3 ppp_async
+alias ppp-compress-21 bsd_comp
+alias ppp-compress-24 ppp_deflate
+alias ppp-compress-26 ppp_deflate
+alias ppp-compress-18 ppp_mppe
+alias tty-ldisc-14 ppp_synctty
+alias net-pf-24 pppoe
+alias tty-ldisc-1 slip
+alias spi:mrf24j40ma mrf24j40
+alias spi:mrf24j40 mrf24j40
